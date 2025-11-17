@@ -24,5 +24,7 @@ The site includes a Home page that will briefly introduce the site and includes 
 **Bao Xiong**
 - 11/16: Updated `home.html` to `index.html` and `books.js` to `app.js` and `.html` files that call those files for best practice
 - 11/16: Reformatted `.html` files to be consistent
+- 11/16: Added header-and-footer branch to experiment with header and footer implementation options
+- 11/16: Added content to `index.html` and potential banner that could be used for each page
 
 **Xuechun Jin**
