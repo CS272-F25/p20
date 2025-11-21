@@ -20,6 +20,7 @@ The site includes a Home page that will briefly introduce the site and includes 
 **Ran Wei**
 - 11/15: Added `about-us.html`, `community.html`, `contact-us.html`, `home.html`, `styles.css`
 - 11/15: Added Bootstrap Navbar to all `.html` files
+- 11/20: Added carousel to `index.html`
 
 **Bao Xiong**
 - 11/16: Updated `home.html` to `index.html` and `books.js` to `app.js` and `.html` files that call those files for best practice
