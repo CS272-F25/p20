@@ -189,28 +189,3 @@
 
 
 
-/* Commmunity page*/
-.card-body p {
-    font-size: 0.9rem;
-}  
-.card-body h3 {
-    font-size: 1.5rem;
-}  
-.card-body h4 {
-    font-size: 1rem;
-}  
-.stars {
-    color: rgb(239, 165, 27);
-    font-size: 1.2rem;
-}
-.new-release-title {
-    text-align: center;
-}
-.new-release-subtitle {
-    font-size: 1.3rem;
-    text-align: center;
-    color: rgb(73, 37, 3);
-}
-.book-review-title {
-    text-align: center;
-}
