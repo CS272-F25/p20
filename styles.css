@@ -186,4 +186,13 @@
 .carousel-btn:hover {
     background: #d9c7a8;
   }
-  
+
+
+
+/* Commmunity page*/
+.card-body p {
+    font-size: 0.9rem;
+}  
+.stars {
+    color: rgb(239, 165, 27);
+}
