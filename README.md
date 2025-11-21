@@ -27,5 +27,6 @@ The site includes a Home page that will briefly introduce the site and includes 
 - 11/16: Reformatted `.html` files to be consistent
 - 11/16: Added header-and-footer branch to experiment with header and footer implementation options
 - 11/16: Added content to `index.html` and potential banner that could be used for each page
+- 11/21: Detected and fixed `index.html` to have a H1 according to WAVE tool
 
 **Xuechun Jin**
