@@ -21,6 +21,8 @@ The site includes a Home page that will briefly introduce the site and includes 
 - 11/15: Added `about-us.html`, `community.html`, `contact-us.html`, `home.html`, `styles.css`
 - 11/15: Added Bootstrap Navbar to all `.html` files
 - 11/20: Added carousel to `index.html`
+- 11/21: Added banners to `about-us.html`, `community.html`, and `contact-us.html`
+- 11/21: Added favicon
 
 **Bao Xiong**
 - 11/16: Updated `home.html` to `index.html` and `books.js` to `app.js` and `.html` files that call those files for best practice
