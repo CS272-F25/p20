@@ -8,6 +8,11 @@
 .card-body h4 {
     font-size: 1rem;
 }  
+.card-body h5 {
+    font-size: 1rem;
+    text-align: center;
+
+}  
 .stars {
     color: rgb(239, 165, 27);
     font-size: 1.2rem;
@@ -16,6 +21,14 @@
     text-align: center;
 }
 .new-release-subtitle {
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgb(73, 37, 3);
+}
+.book-recommemd-title {
+    text-align: center;
+}
+.book-recommemd-subtitle {
     font-size: 1.3rem;
     text-align: center;
     color: rgb(73, 37, 3);
