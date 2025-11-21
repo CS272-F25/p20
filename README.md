@@ -30,3 +30,4 @@ The site includes a Home page that will briefly introduce the site and includes 
 - 11/21: Detected and fixed `index.html` to have a H1 according to WAVE tool
 
 **Xuechun Jin**
+- 11/20: Added content to `community.html` and also added new CSS styles for the content on that page.
