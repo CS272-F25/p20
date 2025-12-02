@@ -1,9 +1,10 @@
 //console.log("our website's javascript file!");
 
+import {API} from './config.js';
+
 const bookListNode = document.getElementById("book-list");
 const searchInput = document.getElementById("search-input");
 const searchBtn = document.getElementById("search-btn");
-const API= '';
 
 searchBtn.addEventListener("click", () => {
     const query = searchInput.value;
