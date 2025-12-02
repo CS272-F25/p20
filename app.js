@@ -14,7 +14,7 @@ searchBtn.addEventListener("click", () => {
 });
 
 function fetchBooks(query) {
-    fetch(`https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(query)}&orderBy=relevance&maxResults=10&key=${API}`)
+    fetch(`https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(query)}&orderBy=relevance&maxResults=10`)
     .then(response => {
         if (!response.ok) {
             throw new Error(`API error: ${response.status}`);
