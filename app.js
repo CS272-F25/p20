@@ -3,7 +3,7 @@
 const bookListNode = document.getElementById("book-list");
 const searchInput = document.getElementById("search-input");
 const searchBtn = document.getElementById("search-btn");
-const API= 'AIzaSyBxhtJa1V12GFiNRrtFuNf3Z6FHN9Ad3bA';
+const API= '';
 
 searchBtn.addEventListener("click", () => {
     const query = searchInput.value;
