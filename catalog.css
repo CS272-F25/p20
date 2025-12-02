@@ -1,0 +1,56 @@
+/*Catalog CSS*/
+/* ===================== Start of Page Banners =================== */
+
+/* Based on https://www.w3schools.com/howto/howto_css_image_text.asp */
+/* Container holding the banner image and the text */
+.page-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.page-banner img {
+    object-fit: cover;
+    overflow: hidden; 
+    object-position: bottom;
+    width:100%; 
+    height: 25rem; 
+    opacity: 0.6;
+}
+
+/* Centered banner imagetext */
+.page-banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #212121;
+}
+
+/* ===================== End of Page Banners ===================== */
+
+  
+.card {
+    border-radius: 0.6rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 1rem;
+}
+
+.book-cover {
+    height: 12rem;
+    width: auto;
+    object-fit: contain;
+    padding: 0.5rem;
+}
+
+.card-title,
+.card-text {
+    font-size: 0.9rem;
+}
+
+.card .btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+}
+
+  
