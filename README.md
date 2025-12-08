@@ -34,3 +34,5 @@ The site includes a Home page that will briefly introduce the site and includes 
 **Xuechun Jin**
 - 11/20: Added content to `community.html` and also added new CSS styles for the content on that page.
 - 11/21: Added content to `community.css`.
+- 12/8: Added `favorites.html` page.
+- 12/8: Added `favorites.css` page.
