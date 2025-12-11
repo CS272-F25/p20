@@ -1,4 +1,4 @@
-/*Favorites CSS*/
+/*Catalog CSS*/
 /* ===================== Start of Page Banners =================== */
 
 /* Based on https://www.w3schools.com/howto/howto_css_image_text.asp */
@@ -28,10 +28,42 @@
 }
 
 /* ===================== End of Page Banners ===================== */
+
+  
+.card {
+    border-radius: 0.6rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 1rem;
+}
+
+.book-cover {
+    height: 12rem;
+    width: auto;
+    object-fit: contain;
+    padding: 0.5rem;
+}
+
+.card-title,
+.card-text {
+    font-size: 0.9rem;
+}
+
+.card .btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+}
+
+.catalog-intro {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.input-group {
+    padding: 1rem;
+}
   
 .favorite-heart {
-    position: absolute;
-    bottom: 0.5rem;  
+    position: absolute; 
     right: 0.5rem;   
     font-size: 1.5rem;
     cursor: pointer;
@@ -39,36 +71,4 @@
 }
 .favorite-heart:hover {
     transform: scale(1.2);
-}
-
-.book-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: #fff;
-    padding: 1rem;
-    border-radius: 0.6rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    height: 100%; 
-    position: relative; 
-}
-
-.book-thumbnail {
-    height: 200px;     
-    width: auto;
-    object-fit: contain;
-    margin-bottom: 1rem;
-}
-
-.book-title {
-    font-size: 0.95rem;
-    font-weight: 600;
-    margin-bottom: 0.3rem;
-}
-
-.book-author {
-    font-size: 0.85rem;
-    color: #555;
-    margin-bottom: 0.5rem;
 }

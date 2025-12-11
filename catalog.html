@@ -2,10 +2,10 @@
 <html lang="en-US">
     <head>
         <meta charset="UTF-8"/>
-        <link href="styles.css" rel="stylesheet"/>
+        <link href="catalog.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <title>About Us - The Next Chapter</title>
+        <title>Catalog - The Next Chapter</title>
         <link rel="icon" type="image/png" href="images/favicon.png">
     </head>
     <body>
@@ -18,10 +18,10 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="catalog.html">Catalog</a>
+                            <a class="nav-link active" aria-current="page" href="catalog.html">Catalog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="about-us.html">About Us</a>
+                            <a class="nav-link" href="about-us.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="community.html">Community</a>
@@ -42,26 +42,25 @@
         </nav>
 
         <div class="page-banner">
-            <img src="images/aboutus-main-background.jpg" alt="An old, open book with fanned, slightly yellowed pages, resting on a wooden surface against a blurry white background.">
-            <div class="page-banner-text display-1">Our Story<hr></div>
+            <img src="images/catalog-main-background.jpg" alt="Person writing in a journal with a teacup on a wooden desk next to a rock and envelopes.">
+            <div class="page-banner-text display-1">Catalog<hr></div>
         </div>
+        
+        <section class="catalog-intro">
+        <h1>Discover Your Next Read</h1>
+        <p>Activate the Query. Every book is a key to another world. </p>
+        </section>
 
-        <section class="aboutus-section container mt-5">
-            <div class="storybook-box">
-                <h1 class="mb-3">About The Next Chapter</h1>
-                <p>
-                    Welcome to <strong>The Next Chapter</strong>, a website for readers who want to explore new stories,
-                    connect with a community of readers, and discover books that stay with them long after the last page.
-                    We aim to create a space where enthusiastic readers can gather and discuss their favorite books!
-                </p>
+        <section class="container my-4">
+            <div class="input-group mb-4">
+                <input type="text" id="search-input" class="form-control col-md-6" placeholder="Find a title, author, or genre...">
+                <button class="btn btn-light" id="search-btn">Search</button>
             </div>
-            <div class="book-buttons text-center mt-4">
-                <a href="index.html" class="book-btn"><i class="bi bi-house-fill"> </i>Home</a>
-                <a href="community.html" class="book-btn"><i class="bi bi-chat-text-fill"> </i>Community</a>
-                <a href="contact-us.html" class="book-btn"><i class="bi bi-envelope-fill"> </i>Contact Us</a>
+            <div class="row" id="book-list"></div>
             </div>
         </section>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="app.js"></script>
+        <script type="module" src="app.js"></script>
     </body>
 </html>
