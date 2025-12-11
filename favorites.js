@@ -27,6 +27,11 @@ function createBookCard(book) {
     const wrapper = document.createElement("div"); 
     wrapper.className = "book-card";
     wrapper.style.position = "relative";
+    wrapper.addEventListener("click", (e) => {
+        if (!e.target.classList.contains("favorite-heart")) {
+            window.open(book.infoLink, "_blank");
+        }
+    });
 
     const img = document.createElement("img");
     img.className = "book-thumbnail";
@@ -47,7 +52,8 @@ function createBookCard(book) {
     const heart = document.createElement("button");
     heart.className = "favorite-heart";
     heart.textContent = "♥"; 
-    heart.addEventListener("click", () => {
+    heart.addEventListener("click", (e) => {
+        e.stopPropagation();
         toggleFavorite(book);
         card.remove(); 
     });

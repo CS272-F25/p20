@@ -38,7 +38,7 @@
     user-select: none;
 }
 .favorite-heart:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
 .book-card {
@@ -52,6 +52,11 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     height: 100%; 
     position: relative; 
+    cursor: pointer;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
 }
 
 .book-thumbnail {
@@ -72,3 +77,13 @@
     color: #555;
     margin-bottom: 0.5rem;
 }
+
+.storybook-box {
+    background: #fffdfa;                
+    border: 2px solid #d9c7a8;           
+    border-radius: 12px;                 
+    padding: 30px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
