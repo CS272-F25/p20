@@ -27,7 +27,7 @@ body h1 {
     border-radius: 12px;                 
     padding: 30px;
     margin: auto;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 /* about us book buttons container */
@@ -38,7 +38,6 @@ body h1 {
     flex-wrap: wrap;
 }
 
-/* about us individual book buttons */
 .book-btn {
     display: inline-block;
     background: #fdf7e3;                 

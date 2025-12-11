@@ -63,8 +63,12 @@
 }
   
 .favorite-heart {
+    position: absolute; 
+    right: 0.5rem;   
     font-size: 1.5rem;
-    position: absolute;
-    padding-top: 1rem;
-    padding-right: 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+.favorite-heart:hover {
+    transform: scale(1.2);
 }

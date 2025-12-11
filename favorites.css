@@ -1,0 +1,74 @@
+/*Favorites CSS*/
+/* ===================== Start of Page Banners =================== */
+
+/* Based on https://www.w3schools.com/howto/howto_css_image_text.asp */
+/* Container holding the banner image and the text */
+.page-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.page-banner img {
+    object-fit: cover;
+    overflow: hidden; 
+    object-position: bottom;
+    width:100%; 
+    height: 25rem; 
+    opacity: 0.6;
+}
+
+/* Centered banner imagetext */
+.page-banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #212121;
+}
+
+/* ===================== End of Page Banners ===================== */
+  
+.favorite-heart {
+    position: absolute;
+    bottom: 0.5rem;  
+    right: 0.5rem;   
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+.favorite-heart:hover {
+    transform: scale(1.2);
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 100%; 
+    position: relative; 
+}
+
+.book-thumbnail {
+    height: 200px;     
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.book-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.book-author {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}

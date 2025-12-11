@@ -11,25 +11,18 @@ searchBtn.addEventListener("click", () => {
     }
 });
 
-//**Favorites localStorage**//
 function getFavorites() {
     return JSON.parse(localStorage.getItem("favorites")) || [];
 }
-  
 function saveFavorites(favs) {
     localStorage.setItem("favorites", JSON.stringify(favs));
 }
-  
 function toggleFavorite(book) {
     const favs = getFavorites();
     const exists = favs.some(f => f.id === book.id);
-  
-    let updated;
-    if (exists) {
-        updated = favs.filter(f => f.id !== book.id);
-    } else {
-        updated = [...favs, book];
-    }
+    const updated = exists
+        ? favs.filter(f => f.id !== book.id)
+        : [...favs, book];
     saveFavorites(updated);
 }
 
@@ -77,7 +70,7 @@ function createBookComponent(bookData) {
     heartBtn.className = "favorite-heart";
 
     const isFav = getFavorites().some(f => f.id === bookData.id);
-    heartBtn.textContent = isFav ? "❤️" : "♡";
+    heartBtn.textContent = isFav ? "♥" : "♡";
 
     heartBtn.addEventListener("click", () => {
         toggleFavorite({
@@ -90,7 +83,7 @@ function createBookComponent(bookData) {
     });
 
     const nowFav = getFavorites().some(f => f.id === bookData.id);
-        heartBtn.textContent = nowFav ? "❤️" : "♡";
+        heartBtn.textContent = nowFav ? "♥" : "♡";
     });
 
     const colDiv = document.createElement("div");
