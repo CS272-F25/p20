@@ -1,7 +1,5 @@
 //console.log("our website's javascript file!");
 
-import {API} from './config.js';
-
 const bookListNode = document.getElementById("book-list");
 const searchInput = document.getElementById("search-input");
 const searchBtn = document.getElementById("search-btn");
@@ -12,6 +10,28 @@ searchBtn.addEventListener("click", () => {
       fetchBooks(query || "bestsellers");
     }
 });
+
+//**Favorites localStorage**//
+function getFavorites() {
+    return JSON.parse(localStorage.getItem("favorites")) || [];
+}
+  
+function saveFavorites(favs) {
+    localStorage.setItem("favorites", JSON.stringify(favs));
+}
+  
+function toggleFavorite(book) {
+    const favs = getFavorites();
+    const exists = favs.some(f => f.id === book.id);
+  
+    let updated;
+    if (exists) {
+        updated = favs.filter(f => f.id !== book.id);
+    } else {
+        updated = [...favs, book];
+    }
+    saveFavorites(updated);
+}
 
 function fetchBooks(query) {
     fetch(`https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(query)}&orderBy=relevance&maxResults=10`)
@@ -53,6 +73,26 @@ function createBookComponent(bookData) {
     ? info.description.substring(0, 120) + "..."
     : "No description available.";
 
+    const heartBtn = document.createElement("span");
+    heartBtn.className = "favorite-heart";
+
+    const isFav = getFavorites().some(f => f.id === bookData.id);
+    heartBtn.textContent = isFav ? "❤️" : "♡";
+
+    heartBtn.addEventListener("click", () => {
+        toggleFavorite({
+        id: bookData.id,
+        title,
+        authors,
+        thumbnail,
+        description,
+        infoLink: bookData.volumeInfo.infoLink
+    });
+
+    const nowFav = getFavorites().some(f => f.id === bookData.id);
+        heartBtn.textContent = nowFav ? "❤️" : "♡";
+    });
+
     const colDiv = document.createElement("div");
     colDiv.className = "col-6 col-md-4 col-lg-3 mb-4 px-2";
 
@@ -88,6 +128,7 @@ function createBookComponent(bookData) {
     };
 
     cardDiv.appendChild(titleNode);
+    cardDiv.appendChild(heartBtn);
     cardDiv.appendChild(imgNode);
     cardDiv.appendChild(authorNode);
     cardDiv.appendChild(descNode);

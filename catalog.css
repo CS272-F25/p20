@@ -62,3 +62,9 @@
     padding: 1rem;
 }
   
+.favorite-heart {
+    font-size: 1.5rem;
+    position: absolute;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
