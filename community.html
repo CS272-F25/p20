@@ -216,8 +216,105 @@
         <section class="book-review container my-4 col-11 col-sm-11 col-md-10 col-lg-9">
             <div class="storybook-box">
                 <h1 class="book-review-title"><i class="bi bi-newspaper"> </i>Book Reviews from Our Community</h1>
+                <p class="subtitle text-center mb-4">See what other readers think — or share your own review!</p>
+
+        
+        <div id="reviews-list" class="mt-4"></div>
+
+        <hr class="my-4">
+
+        
+        <h2 class="text-center">Add Your Review</h2>
+        <form id="reviewForm" class="mt-3">
+
+            <div class="mb-3">
+                <label class="form-label">Book Title</label>
+                <input type="text" id="review-book" class="form-control" placeholder="Enter book title" required>
             </div>
-        </section>
+
+            <div class="mb-3">
+                <label class="form-label">Your Name</label>
+                <input type="text" id="review-author" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Your Rating</label>
+                <select id="review-rating" class="form-control" required>
+                    <option value="">Select rating</option>
+                    <option>⭐ 1</option>
+                    <option>⭐⭐ 2</option>
+                    <option>⭐⭐⭐ 3</option>
+                    <option>⭐⭐⭐⭐ 4</option>
+                    <option>⭐⭐⭐⭐⭐ 5</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Your Review</label>
+                <textarea id="review-text" class="form-control" rows="4" placeholder="Write your review..." required></textarea>
+            </div>
+
+            <button class="btn btn-light" style="background-color:#d9c7a8; border:none;" type="submit">
+                Submit Review
+            </button>
+
+        </form>
+    </div>
+</section>
+        
+        
+
+        <script>
+
+function loadReviews() {
+    const list = document.getElementById("reviews-list");
+    const saved = JSON.parse(localStorage.getItem("communityReviews")) || [];
+
+    list.innerHTML = "";
+
+    if (saved.length === 0) {
+        list.innerHTML = "<p class='text-center'>No reviews yet. Be the first!</p>";
+        return;
+    }
+
+    saved.forEach(review => {
+        const div = document.createElement("div");
+        div.classList.add("storybook-box", "my-3");
+
+        div.innerHTML = `
+            <h3>${review.book}</h3>
+            <p><strong>Reviewer:</strong> ${review.author}</p>
+            <p><strong>Rating:</strong> ${review.rating}</p>
+            <p>${review.text}</p>
+        `;
+
+        list.appendChild(div);
+    });
+}
+
+
+document.getElementById("reviewForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const book = document.getElementById("review-book").value;
+    const author = document.getElementById("review-author").value;
+    const rating = document.getElementById("review-rating").value;
+    const text = document.getElementById("review-text").value;
+
+    const review = { book, author, rating, text };
+
+    const saved = JSON.parse(localStorage.getItem("communityReviews")) || [];
+    saved.push(review);
+    localStorage.setItem("communityReviews", JSON.stringify(saved));
+
+    this.reset();
+    loadReviews();
+});
+
+
+loadReviews();
+</script>
+
 
     </body>
 </html>
