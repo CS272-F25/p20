@@ -39,6 +39,12 @@
 .book-review-title {
     text-align: center;
 }
+.card-body h5,
+.card-body h3 {
+    position: relative;
+    display: inline-block;
+}
+
 .card-body h5:hover,
 .card-body h3:hover {
     transform: scale(1.05);
