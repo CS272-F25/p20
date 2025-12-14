@@ -72,3 +72,8 @@
 .favorite-heart:hover {
     transform: scale(1.2);
 }
+
+/**Footer Link**/
+.footer-link:hover {
+    text-decoration: underline;
+}

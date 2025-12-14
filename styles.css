@@ -172,3 +172,8 @@ aside {
 aside > p {
     margin: 0.5rem;
 }
+
+/**Footer Link**/
+.footer-link:hover {
+    text-decoration: underline;
+}

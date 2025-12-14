@@ -68,3 +68,8 @@
 .card-body h3:hover::after {
     width: 100%;
 }
+
+/**Footer Link**/
+.footer-link:hover {
+    text-decoration: underline;
+}
