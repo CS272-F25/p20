@@ -72,23 +72,109 @@
             </div>
             <button class="carousel-btn next-btn">❯</button>
         </div>
-    <script src="carousel.js"></script>      
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <p class="col-md-4 mb-0 text-body-secondary">
-                &copy; 2025 The Next Chapter
-            </p>
-            <a href="index.html" class="col-md-4 d-flex flex-column align-items-center justify-content-center mb-3 mb-md-0 link-body-emphasis text-decoration-none" aria-label="The Next Chapter Home">
-            <img src="images/favicon.png" alt="The Next Chapter logo" width="24" height="24" class="mb-2">
-            <span class="text-body-secondary" style="font-style: italic;">Discover • Read • Share</span>
-            </a>
+        <script src="carousel.js"></script>
 
-            <ul class="nav col-md-4 justify-content-end">
-                <li class="nav-item"><a href="catalog.html" class="nav-link px-2 text-body-secondary">Catalog</a></li>
-                <li class="nav-item"><a href="community.html" class="nav-link px-2 text-body-secondary">Community</a></li>
-                <li class="nav-item"><a href="about-us.html" class="nav-link px-2 text-body-secondary">About Us</a></li>
-            </ul>
-        </footer>
-      </div>      
+        <div class="container">
+            <div class="storybook-box row justify-content-center">
+                <div class="col-lg-6">
+
+                <h2 class="mb-4 text-center">Get Personalized Book Recommendations</h2>
+
+                <form id="bookForm">
+
+                    <div class="mb-3">
+                    <label for="genre" class="form-label">1. What genre are you in the mood for?</label>
+                    <select class="form-select" id="genre" required>
+                        <option value="" selected disabled>Choose a genre</option>
+                        <option>Fiction</option>
+                        <option>Fantasy</option>
+                        <option>Science Fiction</option>
+                        <option>Mystery / Thriller</option>
+                        <option>Romance</option>
+                        <option>Non-Fiction</option>
+                        <option>Self-Help</option>
+                    </select>
+                    </div>
+
+                    <div class="mb-3">
+                    <label class="form-label">2. What kind of reading experience do you want?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="mood" id="light" required>
+                        <label class="form-check-label" for="light">Light & Fun</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="mood" id="emotional">
+                        <label class="form-check-label" for="emotional">Emotional & Thoughtful</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="mood" id="dark">
+                        <label class="form-check-label" for="dark">Dark & Intense</label>
+                    </div>
+                    </div>
+
+                    <div class="mb-3">
+                    <label for="length" class="form-label">3. Preferred book length?</label>
+                    <select class="form-select" id="length">
+                        <option>Short (under 300 pages)</option>
+                        <option>Medium (300–450 pages)</option>
+                        <option>Long (450+ pages)</option>
+                    </select>
+                    </div>
+
+                    <div class="mb-3">
+                    <label class="form-label">4. How do you prefer to read?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="print">
+                        <label class="form-check-label" for="print">Print</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="ebook">
+                        <label class="form-check-label" for="ebook">eBook</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="audio">
+                        <label class="form-check-label" for="audio">Audiobook</label>
+                    </div>
+                    </div>
+
+                    <div class="mb-4">
+                    <label for="familiarity" class="form-label">5. What are you looking for?</label>
+                    <select class="form-select" id="familiarity">
+                        <option>Something popular</option>
+                        <option>A hidden gem</option>
+                        <option>A classic</option>
+                        <option>Something completely new</option>
+                    </select>
+                    </div>
+
+                    <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        Get Recommendations
+                    </button>
+                    </div>
+
+                </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0 text-body-secondary">
+                    &copy; 2025 The Next Chapter
+                </p>
+                <a href="index.html" class="col-md-4 d-flex flex-column align-items-center justify-content-center mb-3 mb-md-0 link-body-emphasis text-decoration-none" aria-label="The Next Chapter Home">
+                <img src="images/favicon.png" alt="The Next Chapter logo" width="24" height="24" class="mb-2">
+                <span class="text-body-secondary" style="font-style: italic;">Discover • Read • Share</span>
+                </a>
+
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item"><a href="catalog.html" class="nav-link px-2 text-body-secondary">Catalog</a></li>
+                    <li class="nav-item"><a href="community.html" class="nav-link px-2 text-body-secondary">Community</a></li>
+                    <li class="nav-item"><a href="about-us.html" class="nav-link px-2 text-body-secondary">About Us</a></li>
+                </ul>
+            </footer>
+        </div>      
     </body>
 </html>
