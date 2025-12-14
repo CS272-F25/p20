@@ -30,6 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
         fetchBooks(query, length);
     });
 
+    /* 
+    * Fetched books using the Google Books API
+    */
     function fetchBooks(query, length) {
         const apiUrl = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(
         query
@@ -65,6 +68,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    /* 
+    * Creates cards that are displayed on index.html
+    */
     function createBookCard(info) {
         const col = document.createElement("div");
         col.className = "col-6 col-md-4 col-lg-3 mb-4 px-2";
