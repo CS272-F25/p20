@@ -1,116 +1,114 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8"/>
-    <link href="styles.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>About Us - The Next Chapter</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8"/>
+        <link href="styles.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <title>About Us - The Next Chapter</title>
+        <link rel="icon" type="image/png" href="images/favicon.png">
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg" style="background-color: #d9c7a86b;" data-bs-theme="light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">The Next Chapter</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="about-us.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                        <li class="nav-item"><a class="nav-link" href="favorites.html">My Favorites</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                    <form class="d-flex" role="search" id="site-search-form">
+                        <input id="site-search-input" class="form-control me-2" type="search" placeholder="Go to page..." aria-label="Site search"/>
+                        <button class="btn btn-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg" style="background-color: #d9c7a86b;" data-bs-theme="light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">The Next Chapter</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="about-us.html">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
-                <li class="nav-item"><a class="nav-link" href="favorites.html">My Favorites</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
-            </ul>
-            <form class="d-flex" role="search" id="site-search-form">
-                <input id="site-search-input" class="form-control me-2" type="search" placeholder="Go to page..." aria-label="Site search"/>
-                <button class="btn btn-light" type="submit">Search</button>
-            </form>
+        <!-- PAGE BANNER -->
+        <div class="page-banner">
+            <img src="images/aboutus-main-background.jpg" alt="An old, open book with fanned, slightly yellowed pages, resting on a wooden surface against a blurry white background.">
+            <div class="page-banner-text display-1">Our Story<hr></div>
         </div>
-    </div>
-</nav>
 
-<!-- PAGE BANNER -->
-<div class="page-banner">
-    <img src="images/aboutus-main-background.jpg" alt="An old, open book with fanned, slightly yellowed pages, resting on a wooden surface against a blurry white background.">
-    <div class="page-banner-text display-1">Our Story<hr></div>
-</div>
+        <!-- ABOUT US CONTENT -->
+        <section class="container my-5 col-11 col-sm-11 col-md-10 col-lg-9">
+            <!-- About Us Box -->
+            <div class="storybook-box">
+                <h1 class="mb-3">About The Next Chapter</h1>
+                <p>
+                    Welcome to <strong>The Next Chapter</strong>, a website for readers who want to explore new stories,
+                    connect with a community of readers, and discover books that stay with them long after the last page.
+                    We aim to create a space where enthusiastic readers can gather and discuss their favorite books!
+                </p>
 
-<!-- ABOUT US CONTENT -->
-<section class="container my-5 col-11 col-sm-11 col-md-10 col-lg-9">
-    <!-- About Us Box -->
-    <div class="storybook-box">
-        <h1 class="mb-3">About The Next Chapter</h1>
-        <p>
-            Welcome to <strong>The Next Chapter</strong>, a website for readers who want to explore new stories,
-            connect with a community of readers, and discover books that stay with them long after the last page.
-            We aim to create a space where enthusiastic readers can gather and discuss their favorite books!
-        </p>
+                <p>In here, you can:</p>
+                <ul>
+                    <li>
+                        Browse our catalog powered by the Google Books
+                        <abbr title="Application Programming Interface">API</abbr>.
+                    </li>
+                    <aside class="about-aside">
+                        <blockquote>“A reader lives a thousand lives before he dies.” — George R.R. Martin</blockquote>
+                    </aside>
+                    <li>Save your favorite books with our favorites system.</li>
+                    <li>
+                        Join the conversation in the community by leaving book reviews,
+                        reading others' thoughts, and building connections with fellow readers.
+                    </li>
+                </ul>
+            </div>
 
-        <p>In here, you can:</p>
-        <ul>
-            <li>
-                Browse our catalog powered by the Google Books
-                <abbr title="Application Programming Interface">API</abbr>.
-            </li>
-            <aside class="about-aside">
-                <blockquote>“A reader lives a thousand lives before he dies.” — George R.R. Martin</blockquote>
-            </aside>
-            <li>Save your favorite books with our favorites system.</li>
-            <li>
-                Join the conversation in the community by leaving book reviews,
-                reading others’ thoughts, and building connections with fellow readers.
-            </li>
-        </ul>
-    </div>
+            <!-- Mission Box (New) -->
+            <div class="storybook-box mission-box mt-4">
+                <h2 class="mb-3">Our Mission</h2>
+                <p>
+                    Our mission is to make discovering books easier and more enjoyable by combining
+                    thoughtful recommendations, powerful search tools, and a welcoming community
+                    for readers of all interests and backgrounds.
+                </p>
+            </div>
 
-    <!-- Mission Box (New) -->
-    <div class="storybook-box mission-box mt-4">
-        <h2 class="mb-3">Our Mission</h2>
-        <p>
-            Our mission is to make discovering books easier and more enjoyable by combining
-            thoughtful recommendations, powerful search tools, and a welcoming community
-            for readers of all interests and backgrounds.
-        </p>
-    </div>
-
-    <!-- NAV BUTTONS -->
-    <div class="book-buttons text-center mt-4">
-        <a href="index.html" class="book-btn"><i class="bi bi-house-fill"></i> Home</a>
-        <a href="community.html" class="book-btn"><i class="bi bi-chat-text-fill"></i> Community</a>
-        <a href="contact-us.html" class="book-btn"><i class="bi bi-envelope-fill"></i> Contact Us</a>
-    </div>
-</section>
+            <!-- NAV BUTTONS -->
+            <div class="book-buttons text-center mt-4">
+                <a href="index.html" class="book-btn"><i class="bi bi-house-fill"></i> Home</a>
+                <a href="community.html" class="book-btn"><i class="bi bi-chat-text-fill"></i> Community</a>
+                <a href="contact-us.html" class="book-btn"><i class="bi bi-envelope-fill"></i> Contact Us</a>
+            </div>
+        </section>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
 
-<!-- FOOTER -->
-<div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 text-body-secondary">
-            &copy; 2025 The Next Chapter
-        </p>
+        <!-- FOOTER -->
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0 text-body-secondary">
+                    &copy; 2025 The Next Chapter
+                </p>
 
-        <a href="index.html"
-            class="col-md-4 d-flex flex-column align-items-center justify-content-center mb-3 mb-md-0
-                link-body-emphasis text-decoration-none"
-            aria-label="The Next Chapter Home">
-            <img src="images/favicon.png" alt="The Next Chapter logo" width="24" height="24" class="mb-2">
-            <span class="text-body-secondary fst-italic">Discover • Read • Share</span>
-        </a>
+                <a href="index.html"
+                    class="col-md-4 d-flex flex-column align-items-center justify-content-center mb-3 mb-md-0
+                        link-body-emphasis text-decoration-none"
+                    aria-label="The Next Chapter Home">
+                    <img src="images/favicon.png" alt="The Next Chapter logo" width="24" height="24" class="mb-2">
+                    <span class="text-body-secondary fst-italic">Discover • Read • Share</span>
+                </a>
 
-        <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="catalog.html" class="nav-link px-2 text-body-secondary footer-link">Catalog</a></li>
-            <li class="nav-item"><a href="community.html" class="nav-link px-2 text-body-secondary footer-link">Community</a></li>
-            <li class="nav-item"><a href="about-us.html" class="nav-link px-2 text-body-secondary footer-link">About Us</a></li>
-        </ul>
-    </footer>
-</div>
-
-</body>
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item"><a href="catalog.html" class="nav-link px-2 text-body-secondary footer-link">Catalog</a></li>
+                    <li class="nav-item"><a href="community.html" class="nav-link px-2 text-body-secondary footer-link">Community</a></li>
+                    <li class="nav-item"><a href="about-us.html" class="nav-link px-2 text-body-secondary footer-link">About Us</a></li>
+                </ul>
+            </footer>
+        </div>
+    </body>
 </html>
