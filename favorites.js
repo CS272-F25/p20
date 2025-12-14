@@ -1,3 +1,38 @@
+//**Site Search Bar*/
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("site-search-form");
+    const input = document.getElementById("site-search-input");
+
+    if (!form || !input) return;
+
+    const pageMap = {
+        "catalog": "catalog.html",
+        "about us": "about-us.html",
+        "community": "community.html",
+        "community page": "community.html",
+        "favorites": "favorites.html",
+        "my favorites": "favorites.html",
+        "contact": "contact-us.html",
+        "home": "index.html",
+        "index": "index.html",
+        "home page": "idex.html"
+    };
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const query = input.value.trim().toLowerCase();
+        if (!query) return;
+
+        const targetPage = pageMap[query];
+        if (targetPage) {
+            window.location.href = targetPage;
+        } else {
+            alert("404 Page not found. Please try another search!");
+        }
+    });
+});
+//**End of Site Search Bar Feature*/
+
 //**Favorites localStorage**//
 function getFavorites() {
     return JSON.parse(localStorage.getItem("favorites")) || [];
