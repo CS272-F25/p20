@@ -34,6 +34,7 @@ The site includes a Home page that will briefly introduce the site and includes 
 - 11/16: Added header-and-footer branch to experiment with header and footer implementation options
 - 11/16: Added content to `index.html` and potential banner that could be used for each page
 - 11/21: Detected and fixed `index.html` to have a H1 according to WAVE tool
+- 12/13: Added recommendations form to `index.html`
 
 **Xuechun Jin**
 - 11/20: Added content to `community.html` and also added new CSS styles for the content on that page.
