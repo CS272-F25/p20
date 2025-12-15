@@ -8,14 +8,23 @@ This website aims to create a space where book lovers can connect and build a co
 ## Description
 The site includes a Home page that will briefly introduce the site and includes a form where users can select their preferred genres, mood, and content type to generate a list of book recommendations. It also features a general Catalog page that allow users to search books by genre, titles, and authors etc. Additionally, we have a Favorites page to display books the user has marked as liked/favorite on the Catalog page using localStorage. When users click on a book or a link associated with the book, like the title, it will bring them to a Book Details page providing greater detail about the book including but not limited to the book image, full title, author, rating, and summary on Google Books. We have a Community page for users to view posts about book trends and news, book reviews, leave reviews/rate this month's new releases, and view community recommendations. For general purposes, there is an About Us page and a Contact Us page. 
 
-# Requirements
+## Pages & Functionality
+* `index.html`: Home page with carousel and recommendation form for user interaction
+* `about-us.html`: Purpose and Mission explained
+* `catalog.html`: Book Search page
+* `favorites.html`: Display favorites/liked books using loalStorage
+* `community.html`: Book review `book-review.html` and review/rating comment section
+* `book-review.html`: Project Hail Mary review article
+* `contact-us.html`: Contact Us form and other contact information
+
+## Requirements
 * [x] `README.md` file
 * [x] `README.md` that accurately **explains the purpose of the website**.
 * [x] Project title
-* [ ] Description
+* [x] Description
 * [ ] Pages and functionality?
 
-# Contributions
+## Contributions
 
 **Samira Ali**
 - 11/15: Added content and buttons to `about-us.html`
@@ -44,6 +53,7 @@ The site includes a Home page that will briefly introduce the site and includes 
 - 11/21: Added content to `community.css`.
 - 12/8: Added `favorites.html` page.
 - 12/8: Added `favorites.css` page.
+
 
 
 
