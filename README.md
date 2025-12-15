@@ -27,6 +27,7 @@ The site includes a Home page that will briefly introduce the site and includes 
 - 11/21: Added favicon
 - 12/11: Added `catalog.html`with the use of fetch and localStorage
 - 12/11: Updated `favorites.html` with localStorage
+- 12/15: Final touches here and there
 
 **Bao Xiong**
 - 11/16: Updated `home.html` to `index.html` and `books.js` to `app.js` and `.html` files that call those files for best practice
@@ -40,5 +41,6 @@ The site includes a Home page that will briefly introduce the site and includes 
 - 11/21: Added content to `community.css`.
 - 12/8: Added `favorites.html` page.
 - 12/8: Added `favorites.css` page.
+
 
 
