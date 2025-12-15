@@ -18,7 +18,7 @@ The site includes a Home page that will briefly introduce the site and includes 
 - 11/15: Added content and buttons to `about-us.html`
 - 12/11: Added contact form to `contact-us.html`
 - 12/11: Added book review form to `community.html`
-- 12/13: Added content on "index.html"
+- 12/13: Added content on `index.html`
 
 **Ran Wei*
 - 11/15: Added `about-us.html`, `community.html`, `contact-us.html`, `home.html`, `styles.css`
@@ -42,6 +42,7 @@ The site includes a Home page that will briefly introduce the site and includes 
 - 11/21: Added content to `community.css`.
 - 12/8: Added `favorites.html` page.
 - 12/8: Added `favorites.css` page.
+
 
 
 
