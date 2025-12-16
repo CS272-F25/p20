@@ -53,6 +53,7 @@ The site includes a Home page that will briefly introduce the site and includes 
 - 11/21: Added content to `community.css`.
 - 12/8: Added `favorites.html` page.
 - 12/8: Added `favorites.css` page.
+- 12/15: Added `book-review.html` page into the navbar and fixed the `catalog.html` page.
 
 
 
