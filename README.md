@@ -2,17 +2,29 @@
 
 **Group:** 404: Book Not Found
 
-## Description
-The site includes a Home page that will briefly introduce the site and includes a form or a quiz, directly or linked to a post, where users can select their preferred genres, mood, and content type to generate a list of book recommendations. It will also feature a general Catalogue page with filters that allow users to sort or search books by genre, rating, year of publication, ISBN, etc. Additionally, we will have a Favorites page to display books the user has marked as liked/favorite/star on the Catalogue page using sessionStorage or localStorage. When users click on a book or a link associated with the book, like the title, it will bring them to a Book Details page providing greater detail about the book including but not limited to the book image, full title, author, rating, and summary. We will include a Community page for users to view posts about book trends and news, book reviews, rate this month's new releases, and view community recommendations. For general purposes, there will be an About Us page, and a Contact Us page. To provide a wide range of book options, we plan to fetch data from a publicly available book database as our external data source.
+## Purpose 
+This website aims to create a space where book lovers can connect and build a community. It informs readers about popular new releases and makes it easier for users to search for and discover books within their favorite genres. Additionally, it allows members to rate and review books and help others find their next great read.
 
-# Requirements
+## Description
+The site includes a Home page that will briefly introduce the site and includes a form where users can select their preferred genres, mood, and content type to generate a list of book recommendations. It also features a general Catalog page that allow users to search books by genre, titles, and authors etc. Additionally, we have a Favorites page to display books the user has marked as liked/favorite on the Catalog page using localStorage. When users click on a book or a link associated with the book, like the title, it will bring them to a Book Details page providing greater detail about the book including but not limited to the book image, full title, author, rating, and summary on Google Books. We have a Community page for users to view posts about book trends and news, book reviews, leave reviews/rate this month's new releases, and view community recommendations. For general purposes, there is an About Us page and a Contact Us page. 
+
+## Pages & Functionality
+* `index.html`: Home page with carousel and recommendation form for user interaction
+* `about-us.html`: Purpose and Mission explained
+* `catalog.html`: Book Search page
+* `favorites.html`: Display favorites/liked books using loalStorage
+* `community.html`: Book review `book-review.html` and review/rating comment section
+* `book-review.html`: Project Hail Mary review article
+* `contact-us.html`: Contact Us form and other contact information
+
+## Requirements
 * [x] `README.md` file
-* [ ] `README.md` that accurately **explains the purpose of the website**.
+* [x] `README.md` that accurately **explains the purpose of the website**.
 * [x] Project title
-* [ ] Description
+* [x] Description
 * [ ] Pages and functionality?
 
-# Contributions
+## Contributions
 
 **Samira Ali**
 - 11/15: Added content and buttons to `about-us.html`
@@ -28,6 +40,7 @@ The site includes a Home page that will briefly introduce the site and includes 
 - 11/21: Added favicon
 - 12/11: Added `catalog.html`with the use of fetch and localStorage
 - 12/11: Updated `favorites.html` with localStorage
+- 12/15: Final touches here and there
 
 **Bao Xiong**
 - 11/16: Updated `home.html` to `index.html` and `books.js` to `app.js` and `.html` files that call those files for best practice
@@ -42,6 +55,12 @@ The site includes a Home page that will briefly introduce the site and includes 
 - 11/21: Added content to `community.css`.
 - 12/8: Added `favorites.html` page.
 - 12/8: Added `favorites.css` page.
+- 12/13: Added Like buttons to the `community.html` page.
+- 12/15: Added `book-review.html` page into the navbar and fixed the `catalog.html` page.
+
+
+
+
 
 
 

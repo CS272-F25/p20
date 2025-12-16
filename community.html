@@ -31,6 +31,9 @@
                             <a class="nav-link" href="favorites.html">My Favorites</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="book-review.html">Book Review</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="contact-us.html">Contact Us</a>
                         </li>
                     </ul>
@@ -307,78 +310,8 @@
             </button>
 
         </form>
-    </div>
-</section>
-        
-        
-
-        <script>
-
-function loadReviews() {
-    const list = document.getElementById("reviews-list");
-    const saved = JSON.parse(localStorage.getItem("communityReviews")) || [];
-
-    list.innerHTML = "";
-
-    if (saved.length === 0) {
-        list.innerHTML = "<p class='text-center'>No reviews yet. Be the first!</p>";
-        return;
-    }
-
-    saved.forEach(review => {
-        const div = document.createElement("div");
-        div.classList.add("storybook-box", "my-3");
-
-        div.innerHTML = `
-            <h3>${review.book}</h3>
-            <p><strong>Reviewer:</strong> ${review.author}</p>
-            <p><strong>Rating:</strong> ${review.rating}</p>
-            <p>${review.text}</p>
-        `;
-
-        list.appendChild(div);
-    });
-}
-
-
-document.getElementById("reviewForm").addEventListener("submit", function(e){
-    e.preventDefault();
-
-    const book = document.getElementById("review-book").value;
-    const author = document.getElementById("review-author").value;
-    const rating = document.getElementById("review-rating").value;
-    const text = document.getElementById("review-text").value;
-
-    const review = { book, author, rating, text };
-
-    const saved = JSON.parse(localStorage.getItem("communityReviews")) || [];
-    saved.push(review);
-    localStorage.setItem("communityReviews", JSON.stringify(saved));
-
-    this.reset();
-    loadReviews();
-});
-
-
-loadReviews();
-</script>
-
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <p class="col-md-4 mb-0 text-body-secondary">
-                &copy; 2025 The Next Chapter
-            </p>
-            <a href="index.html" class="col-md-4 d-flex flex-column align-items-center justify-content-center mb-3 mb-md-0 link-body-emphasis text-decoration-none" aria-label="The Next Chapter Home">
-            <img src="images/favicon.png" alt="The Next Chapter logo" width="24" height="24" class="mb-2">
-            <span class="text-body-secondary" style="font-style: italic;">Discover • Read • Share</span>
-            </a>
-
-            <ul class="nav col-md-4 justify-content-end">
-                <li class="nav-item"><a href="catalog.html" class="nav-link px-2 text-body-secondary footer-link">Catalog</a></li>
-                <li class="nav-item"><a href="community.html" class="nav-link px-2 text-body-secondary footer-link">Community</a></li>
-                <li class="nav-item"><a href="about-us.html" class="nav-link px-2 text-body-secondary footer-link">About Us</a></li>
-            </ul>
-        </footer>
-    </div>      
+        </div>
+        </section>
+        <script src="community.js"></script>
     </body>
 </html>
