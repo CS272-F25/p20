@@ -1,3 +1,4 @@
+// Handles storing, retrieving, and dynamically displaying community book reviews using localStorage and DOM manipulation.
 function loadReviews() {
     const list = document.getElementById("reviews-list");
     const saved = JSON.parse(localStorage.getItem("communityReviews")) || [];
