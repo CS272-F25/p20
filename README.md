@@ -17,13 +17,6 @@ The site includes a Home page that will briefly introduce the site and includes 
 * `book-review.html`: Project Hail Mary review article
 * `contact-us.html`: Contact Us form and other contact information
 
-## Requirements
-* [x] `README.md` file
-* [x] `README.md` that accurately **explains the purpose of the website**.
-* [x] Project title
-* [x] Description
-* [ ] Pages and functionality?
-
 ## Contributions
 
 **Samira Ali**
@@ -57,6 +50,7 @@ The site includes a Home page that will briefly introduce the site and includes 
 - 12/8: Added `favorites.css` page.
 - 12/13: Added Like buttons to the `community.html` page.
 - 12/15: Added `book-review.html` page into the navbar and fixed the `catalog.html` page.
+
 
 
 
